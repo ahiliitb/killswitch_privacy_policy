@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KillSwitch – Privacy Policy</title>
+    <style>
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; padding: 1.5rem; max-width: 800px; margin: auto; color: #111827; background: #f9fafb; }
+        h1, h2, h3 { color: #111827; }
+        h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.4rem; margin-top: 1.5rem; }
+        h3 { font-size: 1.1rem; margin-top: 1rem; }
+        p { margin: 0.4rem 0; }
+        ul { margin: 0.4rem 0 0.8rem 1.2rem; }
+        strong { font-weight: 600; }
+    </style>
+</head>
+<body>
+    <h1>KillSwitch – Privacy Policy</h1>
+    <p><strong>Effective date:</strong> 18 December 2025</p>
+
+    <p>KillSwitch is a digital wellbeing and productivity app that helps you reduce time spent on distracting apps by monitoring usage and optionally blocking or limiting access to certain apps.</p>
+
+    <p>This Privacy Policy explains what information the app processes, how it is used, and your choices. It is intended to be used both inside this project and as the basis for your app-store privacy policy.</p>
+
+    <h2>1. Information We Collect and Process</h2>
+
+    <p>KillSwitch does <strong>not</strong> require you to create an account and does not intentionally collect information that directly identifies you (such as your name, email address, or phone number).</p>
+
+    <p>However, in order to provide its core functionality, the app processes the following categories of data:</p>
+
+    <h3>1.1 Device and App Usage Information</h3>
+    <ul>
+        <li><strong>Installed apps and package names</strong>: We query the list of installed applications and their package names to allow you to select which apps to monitor or block.</li>
+        <li><strong>App usage statistics and foreground app</strong>: Using Usage Access permissions, we monitor which app is in the foreground and how long you spend in each selected app.</li>
+        <li><strong>System events (e.g., boot completed)</strong>: We listen to certain system events so that monitoring can continue after a device restart.</li>
+    </ul>
+
+    <p>This information is processed <strong>on your device</strong> to decide when to block or allow apps and to show you usage history.</p>
+
+    <h3>1.2 Accessibility and On-Screen Content</h3>
+    <p>If you enable the accessibility-based features (such as AI-powered content analysis for “Potential Time Waste” monitoring), the app’s Accessibility Service can access <strong>text content</strong> that appears on your screen in other apps.</p>
+    <ul>
+        <li>We read text from the current screen to understand the type of content you are viewing (for example, whether it looks like social media, entertainment, or productive content).</li>
+        <li>This text may incidentally contain personal or sensitive information if it is visible on the screen (for example, messages, names, or other content displayed by another app). We do <strong>not</strong> use accessibility data to capture passwords, bank details, or other credentials and we do not intentionally target such content.</li>
+    </ul>
+
+    <h3>1.3 Data Sent to Third-Party AI Service (OpenAI)</h3>
+    <p>For certain optional AI features, KillSwitch sends limited data to a third-party service provider, OpenAI, L.L.C.:</p>
+    <ul>
+        <li><strong>Screen text snippets</strong> (from the Accessibility Service) are sent to OpenAI’s API so that an AI model can classify whether the current content appears distracting or time-wasting.</li>
+        <li><strong>App metadata</strong> such as app name and package name may also be sent to OpenAI’s API to classify apps into categories like “Pure Time Waste,” “Potential Time Waste,” or “No Time Waste.”</li>
+    </ul>
+
+    <p>This data is used <strong>only</strong> to obtain a classification result that helps KillSwitch decide whether to block or allow an app. We do not send device identifiers, your name, or contact information to OpenAI as part of these requests.</p>
+
+    <h3>1.4 Local Preferences and Configuration</h3>
+    <ul>
+        <li><strong>Blocked / protected apps</strong> you configure.</li>
+        <li><strong>Feature settings and schedules</strong>, such as whether monitoring is enabled, passwords/PINs to unlock, and your custom configuration values.</li>
+        <li><strong>Recent analysis results</strong>, including a short snippet of the last analyzed screen text and whether it was classified as distracting.</li>
+    </ul>
+
+    <p>This information is stored locally on your device (for example, in shared preferences or local files) and is used to apply your chosen settings.</p>
+
+    <h3>1.5 Logs and Crash Information</h3>
+    <p>The app may write diagnostic logs and crash information locally (for example, to help the developer troubleshoot issues). These logs are not automatically sent to any server by the app. If you choose to manually share logs with the developer (for example, by email), those logs may contain technical information about your device and app state at the time of the issue.</p>
+
+    <h2>2. How We Use Your Information</h2>
+
+    <p>We use the data described above for the following purposes:</p>
+    <ul>
+        <li><strong>Providing core functionality</strong>: Monitoring app usage, determining when to show a lock overlay, and blocking or allowing apps based on your configuration.</li>
+        <li><strong>AI-based classification</strong>: Using OpenAI’s API to classify apps and on-screen content into time-waste or productive categories, so we can block distracting content if you enable those features.</li>
+        <li><strong>Improving stability and reliability</strong>: Using local logs and usage data to understand and fix bugs or malfunctions.</li>
+    </ul>
+
+    <p>We do <strong>not</strong> use your data for advertising, marketing, or building advertising profiles.</p>
+
+    <h2>3. Data Storage, Retention, and Security</h2>
+
+    <ul>
+        <li><strong>On-device storage</strong>: Most data (usage history, preferences, last analysis results) is stored only on your device.</li>
+        <li><strong>No app-specific backend server</strong>: KillSwitch does not maintain its own cloud backend that stores your personal data.</li>
+        <li><strong>Third-party transmission</strong>: When using AI features, screen text snippets and app metadata are transmitted over an encrypted connection (HTTPS) to OpenAI’s API for classification.</li>
+        <li><strong>Retention</strong>: Data is retained for as long as needed to provide the app’s functionality (for example, your usage history, preferences, and cached analysis results). You can delete this data by clearing the app’s data in system settings or uninstalling the app.</li>
+    </ul>
+
+    <p>We take reasonable technical measures to protect data within the app (for example, avoiding unnecessary data collection and using secure network protocols), but no system can be perfectly secure.</p>
+
+    <h2>4. Data Sharing and Disclosure</h2>
+
+    <p>We do <strong>not</strong> sell your personal data.</p>
+
+    <p>We share data only in the following limited circumstances:</p>
+    <ul>
+        <li><strong>OpenAI (AI service provider)</strong>: When you enable AI-driven features, KillSwitch sends screen text snippets and app metadata to OpenAI’s API to obtain content/app classifications. OpenAI’s processing of this data is governed by their own terms and privacy policy.</li>
+        <li><strong>Service providers / tools you choose to use</strong>: If you choose to share logs or diagnostic information with the developer using email or other tools on your device, those communications are handled by the relevant service providers (e.g., your email provider).</li>
+        <li><strong>Legal compliance</strong>: We may disclose information if reasonably necessary to comply with applicable law, regulation, legal process, or enforceable governmental request, or to protect the rights, property, or safety of the developer, users, or others.</li>
+    </ul>
+
+    <h2>5. Children’s Privacy</h2>
+
+    <p>KillSwitch is <strong>not directed to children under 13</strong> and is designed for adults who want to manage their own device usage.</p>
+    <ul>
+        <li>We do not knowingly collect personal information from children under 13.</li>
+        <li>If you are a parent or guardian and believe that a child under 13 has provided personal information through this app, please contact the developer using the email address listed on the app’s store page so that the information can be removed.</li>
+    </ul>
+
+    <p>If you intend to make this app available to children or include them in your target audience, you must ensure that your use of this app and its data collection complies with all applicable child privacy laws and platform policies (such as COPPA and Google Play’s Families and User Data policies).</p>
+
+    <h2>6. Your Choices and Controls</h2>
+
+    <p>You have several options to control how KillSwitch processes your data:</p>
+    <ul>
+        <li><strong>Permissions</strong>: You can grant or revoke permissions (Usage Access, Accessibility, overlay permissions, etc.) at any time in your device’s system settings. Some features will not work without their required permissions.</li>
+        <li><strong>AI features</strong>: You can choose whether to enable or disable AI-based features that send data to OpenAI’s API.</li>
+        <li><strong>Configuration</strong>: You can adjust which apps are monitored or blocked, change schedules, and update other preferences within the app.</li>
+        <li><strong>Delete data / uninstall</strong>: You can clear app data from system settings or uninstall the app entirely, which removes locally stored app data from your device.</li>
+    </ul>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Effective date" at the top of this document. The latest version of this policy will be available with the app (for example, via a hosted copy of this <code>Privacy.html</code>) and can be used for the app-store listing.</p>
+
+    <h2>8. Contact</h2>
+
+    <p>If you have questions or concerns about this Privacy Policy or about how KillSwitch handles data, please contact the developer using the <strong>contact email address provided on the app’s store listing</strong>.</p>
+</body>
+</html>
+
