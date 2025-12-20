@@ -28,24 +28,25 @@
     <ul>
         <li><strong>Installed apps and package names</strong> – to let you select apps to monitor or block</li>
         <li><strong>App usage statistics</strong> – which apps you use and for how long (processed on your device only)</li>
-        <li><strong>Screen text content</strong> – if you enable AI features, we read on-screen text to classify content as distracting or productive</li>
+        <li><strong>Screen text content</strong> – we use accessibility services to read screen content, but <strong>only for Google Chrome and YouTube apps</strong>. Screen reading is not performed for any other applications</li>
         <li><strong>App settings and preferences</strong> – stored locally on your device</li>
     </ul>
 
-    <h2>2. Third-Party AI Service (OpenAI)</h2>
+    <h2>2. Screen Reading (Accessibility Service)</h2>
 
-    <p>If you enable AI features, the app sends <strong>screen text snippets</strong> and <strong>app names</strong> to OpenAI's API to classify content. We do <strong>not</strong> send your name, device ID, or contact information. Data is sent over encrypted HTTPS connections.</p>
+    <p>KillSwitch uses Android's accessibility service to read screen content, but <strong>only for Google Chrome and YouTube applications</strong>. This helps provide app blocking functionality specifically for these two apps. Screen reading is <strong>not</strong> performed for any other applications on your device. All screen content is processed locally on your device and is <strong>not</strong> sent to any external services.</p>
 
     <h2>3. Data Storage and Security</h2>
 
-    <p>All data is stored <strong>on your device</strong> only. We do not maintain cloud servers. When using AI features, data is temporarily sent to OpenAI for classification. You can delete all data by clearing app data in system settings or uninstalling the app.</p>
+    <p>All data is stored <strong>on your device</strong> only. We do not maintain cloud servers and do not send any screen content or usage data to external services. Screen content read from Chrome and YouTube is processed locally and is not transmitted or stored externally. You can delete all data by clearing app data in system settings or uninstalling the app.</p>
 
     <h2>4. Children's Privacy (COPPA Compliance)</h2>
 
     <p>KillSwitch is designed for users of all ages, including children under 13, to help reduce screen time.</p>
     <ul>
         <li>We do <strong>not</strong> knowingly collect personal information from children</li>
-        <li>All data processing happens on-device or is limited to necessary AI classification</li>
+        <li>All data processing happens on-device only – screen reading is limited to Chrome and YouTube apps only</li>
+        <li>We do <strong>not</strong> send data to external services or third-party APIs</li>
         <li>We do <strong>not</strong> sell data or use it for advertising</li>
         <li>Parents/guardians can control permissions and delete data at any time</li>
     </ul>
@@ -56,8 +57,7 @@
 
     <p>You can:</p>
     <ul>
-        <li>Grant or revoke permissions in device settings</li>
-        <li>Enable or disable AI features</li>
+        <li>Grant or revoke permissions (including accessibility service) in device settings</li>
         <li>Configure which apps are monitored or blocked</li>
         <li>Clear app data or uninstall to delete all information</li>
     </ul>
