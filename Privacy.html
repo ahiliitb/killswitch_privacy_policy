@@ -41,20 +41,12 @@
     <h3>1.2 Accessibility and On-Screen Content</h3>
     <p>If you enable the accessibility-based features (such as AI-powered content analysis for “Potential Time Waste” monitoring), the app’s Accessibility Service can access <strong>text content</strong> that appears on your screen in other apps.</p>
     <ul>
+        <li><strong>Your screen content stays on your device</strong>: All screen text data is processed <strong>locally on your phone</strong> and <strong>never leaves your device</strong>. No screen content or text data is transmitted to external servers, cloud services, or third parties.</li>
         <li>We read text from the current screen to understand the type of content you are viewing (for example, whether it looks like social media, entertainment, or productive content).</li>
         <li>This text may incidentally contain personal or sensitive information if it is visible on the screen (for example, messages, names, or other content displayed by another app). We do <strong>not</strong> use accessibility data to capture passwords, bank details, or other credentials and we do not intentionally target such content.</li>
     </ul>
 
-    <h3>1.3 Data Sent to Third-Party AI Service (OpenAI)</h3>
-    <p>For certain optional AI features, KillSwitch sends limited data to a third-party service provider, OpenAI, L.L.C.:</p>
-    <ul>
-        <li><strong>Screen text snippets</strong> (from the Accessibility Service) are sent to OpenAI’s API so that an AI model can classify whether the current content appears distracting or time-wasting.</li>
-        <li><strong>App metadata</strong> such as app name and package name may also be sent to OpenAI’s API to classify apps into categories like “Pure Time Waste,” “Potential Time Waste,” or “No Time Waste.”</li>
-    </ul>
-
-    <p>This data is used <strong>only</strong> to obtain a classification result that helps KillSwitch decide whether to block or allow an app. We do not send device identifiers, your name, or contact information to OpenAI as part of these requests.</p>
-
-    <h3>1.4 Local Preferences and Configuration</h3>
+    <h3>1.3 Local Preferences and Configuration</h3>
     <ul>
         <li><strong>Blocked / protected apps</strong> you configure.</li>
         <li><strong>Feature settings and schedules</strong>, such as whether monitoring is enabled, passwords/PINs to unlock, and your custom configuration values.</li>
@@ -71,7 +63,7 @@
     <p>We use the data described above for the following purposes:</p>
     <ul>
         <li><strong>Providing core functionality</strong>: Monitoring app usage, determining when to show a lock overlay, and blocking or allowing apps based on your configuration.</li>
-        <li><strong>AI-based classification</strong>: Using OpenAI’s API to classify apps and on-screen content into time-waste or productive categories, so we can block distracting content if you enable those features.</li>
+        <li><strong>AI-based classification</strong>: Using local AI models to classify apps and on-screen content into time-waste or productive categories, so we can block distracting content if you enable those features.</li>
         <li><strong>Improving stability and reliability</strong>: Using local logs and usage data to understand and fix bugs or malfunctions.</li>
     </ul>
 
@@ -82,7 +74,7 @@
     <ul>
         <li><strong>On-device storage</strong>: Most data (usage history, preferences, last analysis results) is stored only on your device.</li>
         <li><strong>No app-specific backend server</strong>: KillSwitch does not maintain its own cloud backend that stores your personal data.</li>
-        <li><strong>Third-party transmission</strong>: When using AI features, screen text snippets and app metadata are transmitted over an encrypted connection (HTTPS) to OpenAI’s API for classification.</li>
+        <li><strong>Local processing</strong>: All AI processing is performed locally on your device using pre-trained models. No data is transmitted to external servers for AI analysis.</li>
         <li><strong>Retention</strong>: Data is retained for as long as needed to provide the app’s functionality (for example, your usage history, preferences, and cached analysis results). You can delete this data by clearing the app’s data in system settings or uninstalling the app.</li>
     </ul>
 
@@ -94,7 +86,6 @@
 
     <p>We share data only in the following limited circumstances:</p>
     <ul>
-        <li><strong>OpenAI (AI service provider)</strong>: When you enable AI-driven features, KillSwitch sends screen text snippets and app metadata to OpenAI’s API to obtain content/app classifications. OpenAI’s processing of this data is governed by their own terms and privacy policy.</li>
         <li><strong>Service providers / tools you choose to use</strong>: If you choose to share logs or diagnostic information with the developer using email or other tools on your device, those communications are handled by the relevant service providers (e.g., your email provider).</li>
         <li><strong>Legal compliance</strong>: We may disclose information if reasonably necessary to comply with applicable law, regulation, legal process, or enforceable governmental request, or to protect the rights, property, or safety of the developer, users, or others.</li>
     </ul>
